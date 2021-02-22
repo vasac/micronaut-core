@@ -363,6 +363,16 @@ ext {
                     group:'io.micronaut.redis',
                     name:'micronaut-redis-lettuce'
             ],
+            'micronaut.coherence': [
+                    version:micronautCoherenceVersion,
+                    group:'io.micronaut.coherence',
+                    modules: ['micronaut-coherence', 'micronaut-coherence-grpc-client', 'micronaut-coherence-session', 'micronaut-coherence-cache', 'micronaut-coherence-distributed-config']
+            ],
+            coherence: [
+                    version:coherenceVersion,
+                    group:'com.oracle.coherence.ce',
+                    name:'coherence'
+            ],
             'micronaut.neo4j': [
                     version:micronautNeo4jVersion,
                     group:'io.micronaut.neo4j',
